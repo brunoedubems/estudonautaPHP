@@ -1,0 +1,12 @@
+body{
+    background-color: #ddd;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#corpo{
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow:  0 0 30px #777;
+}
