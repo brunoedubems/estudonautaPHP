@@ -1,0 +1,3 @@
+<?php
+
+$banco = new mysqli();
