@@ -39,6 +39,6 @@ listagem tr:nth-child(even){
 }
 
 
-.mini {
-    width: 150px;
-}
+img.mini {
+    max-width: 100px;
+
