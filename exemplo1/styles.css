@@ -37,3 +37,8 @@ listagem tr:nth-child(even){
 .listagem td:nth-child(3){
     width: 90px;
 }
+
+
+.mini {
+    width: 150px;
+}

@@ -19,35 +19,19 @@
             <?php
             $busca = $banco->query("select * from jogos order by nome");
             if (!$busca) {
-                echo "<p> Infelizmente a busca deu errado</p>";
+                echo "<tr><td>Infelizmente a busca deu errado";
             } else {
                 if ($busca->num_rows == 0) {
-                    echo "<p>Nenhum registro encontrado</p>";
+                    echo "<tr><td>Nenhum registro encontrado";
                 } else {
                     while($reg=$busca->fetch_object()){
-                        echo "<tr><td>$reg->capa<td>$reg->nome";
+                        echo "<tr><td><img src='fotos/$reg->capa' class='mini'/><td>$reg->nome";
                         echo "<td>Adm";
 
                     }
                 }
             }
             ?>
-            <tr>
-                <td>Foto
-                <td>Nome
-                <td>Adm
-            <tr>
-                <td>Foto
-                <td>Nome
-                <td>Adm
-            <tr>
-                <td>Foto
-                <td>Nome
-                <td>Adm
-            <tr>
-                <td>Foto
-                <td>Nome
-                <td>Adm
         </table>
     </div>
     <?php $banco->close(); ?>
