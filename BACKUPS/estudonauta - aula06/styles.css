@@ -1,0 +1,58 @@
+body{
+    background-color: #ddd;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div#corpo{
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow:  0 0 30px #777;
+}
+
+.listagem{
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+}
+
+.listagem tr {
+    height: 50px;
+}
+
+listagem td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+listagem tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.listagem td:nth-child(1){
+    width: 50px;
+}
+.listagem td:nth-child(3){
+    width: 90px;
+}
+
+
+img.mini {
+    max-width: 50px;
+}
+
+img.full {
+    height: 400px;
+}
+
+table.detalhes {
+    width: 100%;
+
+}
+
+table.detalhes td{
+    padding: 10px;
+    vertical-align: top;
+}
