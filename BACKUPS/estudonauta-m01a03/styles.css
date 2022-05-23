@@ -40,5 +40,6 @@ listagem tr:nth-child(even){
 
 
 img.mini {
-    max-width: 100px;
+    max-width: 50px;
+}
 
