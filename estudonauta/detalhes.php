@@ -30,9 +30,12 @@ require_once "includes/funcoesPHP.php";
             }else {
                 if($busca->num_rows == 1){
                     $reg = $busca->fetch_object();
-                   echo  "<tr><td rowspan='3'>fotos";
+                    $t = thumb($reg->capa);
+                   echo  "<tr><td rowspan='3'><img src='$t' class='full'/>";
                    echo "<td><h2>$reg->nome</h2>";
-                   echo  "<tr><td>descrição";
+                   echo "Nota: " . number_format($reg->nota,1) .
+                   "/10.0";
+                   echo  "<tr><td>$reg->descricao";
                    echo "<tr><td>Adm</td></tr>";
                 }else{
                     echo "<tr><td>Nenhum registro encontrado";
@@ -41,6 +44,10 @@ require_once "includes/funcoesPHP.php";
  
             ?>
         </table>
+        <a href="index.php">
+            <img src="./icones/icoback.png" alt="icone de voltar">
+
+        </a>
     </div>
 </body>
 
